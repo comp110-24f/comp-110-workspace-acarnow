@@ -24,7 +24,7 @@ def tea_bags(people: int) -> int:
     return people * 2
 
 
-"""Calculates num of treats needed based on num of teas that are expected to be drank."""
+"""Calculates num of treats needed based on num of teas that are expected to be drank"""
 
 
 def treats(people: int) -> int:
