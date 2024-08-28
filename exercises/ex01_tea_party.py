@@ -2,8 +2,6 @@
 
 __author__: str = "730743185"
 
-"""Print all information on the party based on num of guests. Use other functions."""
-
 
 # prints the sentence needed and adds the value that is needed, either based off
 # the input of the user or the value from the function, using the value the user inserts
@@ -11,30 +9,25 @@ __author__: str = "730743185"
 
 
 def main_planner(guests: int) -> None:
+    """Print all info on the party based on num of guests. Use other functions."""
     print("A Cozy Tea Party for " + str(guests) + " People!")
     print("Tea Bags: " + str(tea_bags(guests)))
     print("Treats: " + str(treats(guests)))
     print("Cost: $" + str(cost(tea_bags(guests), treats(guests))))
 
 
-"""Calculates the num of tea bags needed based on num of people going to the party"""
-
-
 def tea_bags(people: int) -> int:
+    """Calculates the num of tea bags needed based on num of people going to party"""
     return people * 2
 
 
-"""Calculates num of treats needed based on num of teas that are expected to be drank"""
-
-
 def treats(people: int) -> int:
+    """Calculates num of treats needed based on num of teas that are expected"""
     return int(tea_bags(people) * 1.5)
 
 
-"""Calculates total cost of the tea party acc. to # of tea bags and treats. """
-
-
 def cost(tea_count: int, treat_count: int) -> float:
+    """Calculates total cost of the tea party acc. to # of tea bags and treats."""
     return (tea_count * 0.5) + (treat_count * 0.75)
 
 
